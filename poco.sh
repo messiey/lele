@@ -6,7 +6,9 @@ apt install python3 python3-pip git
 wget https://raw.githubusercontent.com/messiey/lele/master/pocoo.zip
 unzip pocoo.zip
 rm -rf pocoo.zip
-pip3 install -r requirements.txt
+cd regis
+rm var.txt
+pip3 install -r regis/requirements.txt
 pip3 install pillow
 
 #isi data
