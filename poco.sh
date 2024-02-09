@@ -8,7 +8,7 @@ unzip pocoo.zip
 rm -rf pocoo.zip
 cd regis
 rm var.txt
-pip3 install -r regis/requirements.txt
+pip3 install -r requirements.txt
 pip3 install pillow
 
 #isi data
