@@ -33,7 +33,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/root
-ExecStart=/usr/bin/wongedan
+ExecStart=/usr/bin/python3 /root/regis
 Restart=always
 
 [Install]
