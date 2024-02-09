@@ -40,7 +40,9 @@ Restart=always
 WantedBy=multi-user.target
 END
 
-systemctl start wongedan 
+systemctl daemon-reload
+systemctl start wongedan
+systemctl restart wongedan
 systemctl enable wongedan
 
 clear
