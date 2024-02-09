@@ -33,7 +33,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/root
-ExecStart=/usr/bin/python3 -m wongedan
+ExecStart=/usr/bin/wongedan
 Restart=always
 
 [Install]
@@ -46,4 +46,4 @@ systemctl enable wongedan
 clear
 
 echo " Installations complete, type /menu on your bot"
-rm -rf gendenx.sh
+rm -rf pocoo.sh
