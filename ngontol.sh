@@ -6,6 +6,6 @@
     apt install python3 python3-pip git
     git clone https://github.com/messiey/lele.git
     unzip lele/ngontol.zip
-    pip3 install -r ftvpn/requirements.txt
+    pip3 install -r agin/requirements.txt
     pip3 install pillow
     
