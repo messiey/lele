@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /usr/bin
-wget https://raw.githubusercontent.com/messiey/lele/master/add-ip.sh && chmod +x /usr/bin/add-ip
-clear
-cd /usr/bin
-wget https://raw.githubusercontent.com/messiey/lele/master/jembot.sh && chmod +x jembot.sh && ./jembot.sh
+
+REPO="https://raw.githubusercontent.com/messiey/lele/master/"
+
+wget -q -O /usr/bin/m-ip "${REPO}m-ip.sh" && chmod +x /usr/bin/m-ip
+wget -q -O /usr/bin/m-bot "${REPO}m-bot.sh" && chmod +x /usr/bin/m-bot
