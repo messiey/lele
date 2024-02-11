@@ -17,7 +17,7 @@ cd /usr/bin
 clear
 wget https://raw.githubusercontent.com/messiey/lele/master/error404project.zip
 unzip error404project.zip
-pip3 install -r kyt/requirements.txt
+pip3 install -r error404project/requirements.txt
 
 #isi data
 echo ""
