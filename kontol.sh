@@ -1,7 +1,6 @@
 #!/bin/bash
 apt update && apt upgrade
 apt install python3 python3-pip git
-cd /etc/bot
 wget -q https://raw.githubusercontent.com/messiey/lele/master/kontol.zip
 unzip kontol.zip
 rm -rf kontol.zip
@@ -21,8 +20,8 @@ Description=Simple register - @error404project
 After=network.target
 
 [Service]
-WorkingDirectory=/etc/bot
-ExecStart=python3 -m regis
+WorkingDirectory=/root/
+ExecStart=/usr/bin/python3 /root/regis
 Restart=always
 
 [Install]
