@@ -18,6 +18,7 @@ clear
 wget https://raw.githubusercontent.com/messiey/lele/master/error404project.zip
 unzip error404project.zip
 pip3 install -r error404project/requirements.txt
+pip install pillow
 
 #isi data
 echo ""
