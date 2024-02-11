@@ -23,7 +23,7 @@ checking_sc() {
 }
 checking_sc
 
-domain=$(cat /etc/xray/domain)
+
 #color
 grenbo="\e[92;1m"
 NC='\e[0m'
