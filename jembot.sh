@@ -33,34 +33,7 @@ echo -e "${tyblue}┌───────────────────�
 echo -e "${tyblue}│      PROCESS INSTALLED BOT TELEGRAM      │${NC}"
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}"
 
-function install-bot() {
-fun_bar() {
-    CMD[0]="$1"
-    CMD[1]="$2"
-    (
-        [[ -e $HOME/fim ]] && rm $HOME/fim
-        ${CMD[0]} -y >/dev/null 2>&1
-        ${CMD[1]} -y >/dev/null 2>&1
-        touch $HOME/fim
-    ) >/dev/null 2>&1 &
-    tput civis
-    echo -ne "  \033[0;33mSedang Menginstal Bot Telegram \033[1;37m- \033[0;33m["
-    while true; do
-        for ((i = 0; i < 18; i++)); do
-            echo -ne "\033[0;32m#"
-            sleep 0.1s
-        done
-        [[ -e $HOME/fim ]] && rm $HOME/fim && break
-        echo -e "\033[0;33m]"
-        sleep 1s
-        tput cuu1
-        tput dl1
-        echo -ne "  \033[0;33mSedang Menginstal Bot Telegram \033[1;37m- \033[0;33m["
-    done
-    echo -e "\033[0;33m]\033[1;37m -\033[1;32m Succes !\033[1;37m"
-    tput cnorm
-}  
-res1() {
+#install-bot
     apt update -y && apt upgrade -y
     apt install python3 python3-pip git speedtest-cli -y
     pip install requests subprocess
@@ -84,7 +57,7 @@ res1() {
     rm -rf /usr/bin/*.zip
     cd
     rm -rf /etc/tele
-}
+
 echo -e ""
 echo -e "  \033[1;91m Tunggu Sebentar Tuan...\033[1;37m"
 fun_bar 'res1'
@@ -168,7 +141,7 @@ echo "Done"
 echo " Installations complete, type /menu on your bot"
 #read -n 1 -s -r -p "Press any key to back on menu"
 #menu
-}
+
 cd
 if [ -e /usr/bin/error404project ]; then
 echo -ne
