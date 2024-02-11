@@ -56,7 +56,7 @@ systemctl start error404project
 systemctl enable error404project
 systemctl restart error404project
 cd /root
-rm -rf ngontol.sh
+rm -rf jembot.sh
 echo "Done"
 echo "Your Data Bot"
 echo -e "==============================="
