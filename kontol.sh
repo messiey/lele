@@ -17,7 +17,7 @@ echo -e ADMIN='"'$admin'"' >> /root/regis/var.txt
 
 cat > /etc/systemd/system/regis.service << END
 [Unit]
-Description=Simple register - @xdxl_store
+Description=Simple register - @error404project
 After=network.target
 
 [Service]
