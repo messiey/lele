@@ -3,7 +3,7 @@
 #install
 apt update && apt upgrade
 apt install python3 python3-pip git
-git clone https://github.com/Zeadxt/dbasu.git
+git clone https://github.com/messiey/lele.git
 unzip lele/error404project.zip
 pip3 install -r error404project/requirements.txt
 pip3 install pillow
@@ -40,6 +40,7 @@ Restart=always
 WantedBy=multi-user.target
 END
 
+clear
 systemctl start error404project 
 systemctl enable error404project
 
