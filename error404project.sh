@@ -19,11 +19,12 @@ read -e -p "[*] Input your Bot Token    :  " bottoken
 read -e -p "[*] Input Your Id Telegram  :  " admin
 read -e -p "[*] Input Your Subdomain    :  " domain
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e ""
+echo -e ""
 echo -e BOT_TOKEN='"'$bottoken'"' >> /root/error404project/var.txt
 echo -e ADMIN='"'$admin'"' >> /root/error404project/var.txt
 echo -e DOMAIN='"'$domain'"' >> /root/error404project/var.txt
 clear
-echo "Done"
 echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
 echo -e "\033[1;93m│$NC\033[42m          Detail Akun Anda                
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
@@ -32,7 +33,8 @@ echo -e "\033[1;93m│ ${grenbo}[NOTE]${NC} \033[0;36mTOKEN BOT  : $bottoken ${N
 echo -e "\033[1;93m│ ${grenbo}[NOTE]${NC} \033[0;36mID TELE    : $admin ${NC}"
 echo -e "\033[1;93m│ ${grenbo}[NOTE]${NC} \033[0;36mDOMAIN     : $domainl ${NC}"
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
-echo "Setting done"
+echo "Setting done Please wait 10s"
+sleep 10
 
 cat > /etc/systemd/system/error404project.service << END
 [Unit]
@@ -52,8 +54,6 @@ systemctl start error404project
 systemctl enable error404project
 
 sleep 3
-
-clear
 
 echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
 echo -e "\033[1;93m│  ${grenbo}[NOTE]${NC} \033[0;36mKetik, /menu Untuk Memulai Layanan${NC}"
