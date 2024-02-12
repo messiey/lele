@@ -94,3 +94,4 @@ systemctl restart error404project &> /dev/null
 
 echo "Done"
 echo " Installations complete, type /menu on your bot"
+clear
