@@ -17,8 +17,8 @@ Description=Simple Error404Project - @Error404Project
 After=network.target
 
 [Service]
-WorkingDirectory=/root
-ExecStart=/usr/bin/python3 -m error404project
+WorkingDirectory=/root/
+ExecStart=/usr/bin/python3 -m /root/error404project/bot.py
 Restart=always
 
 [Install]
