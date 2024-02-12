@@ -32,9 +32,6 @@ echo -e "\033[1;93m│ ${grenbo}[NOTE]${NC} \033[0;36mTOKEN BOT  : $bottoken ${N
 echo -e "\033[1;93m│ ${grenbo}[NOTE]${NC} \033[0;36mID TELE    : $admin ${NC}"
 echo -e "\033[1;93m│ ${grenbo}[NOTE]${NC} \033[0;36mDOMAIN     : $domainl ${NC}"
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
-echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
-echo -e "\033[1;93m│  ${grenbo}[NOTE]${NC} \033[0;36mKetik, /menu Untuk Memulai Layanan${NC}"
-echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo "Setting done"
 
 cat > /etc/systemd/system/error404project.service << END
@@ -58,4 +55,8 @@ sleep 3
 
 clear
 
-echo " Installations complete, type /menu on your bot"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│  ${grenbo}[NOTE]${NC} \033[0;36mKetik, /menu Untuk Memulai Layanan${NC}"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+
+clear
