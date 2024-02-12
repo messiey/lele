@@ -1,5 +1,5 @@
 #!/bin/bash
-function install-bot(){
+
 apt update -y && apt upgrade -y
 apt install python3 python3-pip git speedtest-cli -y
 sudo apt-get install -y p7zip-full
