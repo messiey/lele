@@ -13,21 +13,6 @@ pip3 install pillow
 
 clear
 
-#isi data
-echo ""
-read -e -p "[*] Masukan Bot Token Anda Tuan : " bottoken
-read -e -p "[*] Masukan Id Telegram Anda Tuan :" admin
-echo -e BOT_TOKEN='"'$bottoken'"' >> /root/error404project/var.txt
-echo -e ADMIN='"'$admin'"' >> /root/error404project/var.txt
-clear
-echo "Done"
-echo "Your Data Bot"
-echo -e "==============================="
-echo "Bot Telegram        : $bottoken"
-echo "Id Telegram        : $admin"
-echo -e "==============================="
-echo "Setting done"
-
 cat > /etc/systemd/system/error404project.service << END
 [Unit]
 Description=Simple Error404Project - @Error404Project
