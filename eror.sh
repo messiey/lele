@@ -4,7 +4,6 @@
 
 apt update && apt upgrade
 sudo apt-get install python3 python3-pip -y
-cd /usr/bin
 wget https://raw.githubusercontent.com/messiey/lele/master/eror.zip
 unzip error.zip
 pip3 install -r error/requirements.txt
@@ -19,7 +18,7 @@ Description=Simple Error404Project - @Error404Project
 After=network.target
 
 [Service]
-WorkingDirectory=/usr/bin
+WorkingDirectory=/root
 ExecStart=/usr/bin/python3 -m error404project
 Restart=always
 
