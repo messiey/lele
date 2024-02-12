@@ -46,6 +46,5 @@ systemctl enable error404project
 
 sleep 3
 
-clear
 
 echo " Installations complete, type /menu on your bot"
