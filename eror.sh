@@ -3,9 +3,9 @@
 #install
 
 apt update && apt upgrade
-sudo apt-get install python3 python3-pip -y
-wget https://raw.githubusercontent.com/messiey/lele/master/eror.zip
-unzip error.zip
+apt install python3 python3-pip git
+git clone https://github.com/messiey/lele.git
+unzip lele/error.zip
 pip3 install -r error/requirements.txt
 pip3 install python-telegram-bot==13.7
 pip3 install pillow
