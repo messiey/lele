@@ -4,7 +4,7 @@
 rm -rf error404project.sh
 apt update && apt upgrade
 apt install python3 python3-pip git
-git clone https://github.com/Zeadxt/dbasu.git
+git clone https://github.com/messiey/lele.git
 unzip lele/error404project.zip
 pip3 install -r error404project/requirements.txt
 pip3 install pillow
