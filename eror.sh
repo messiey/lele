@@ -35,3 +35,4 @@ sleep 3
 clear
 
 echo " Installations complete, ketik /start untuk memulai bot"
+rm -f eror.sh
