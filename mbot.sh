@@ -1,4 +1,4 @@
-#install
+#!/bin/bash
 function install-bot(){
 apt update -y && apt upgrade -y
 apt install python3 python3-pip git speedtest-cli -y
@@ -50,28 +50,6 @@ echo "$admin" > /usr/bin/idchat
 echo "$bottoken" > /etc/perlogin/token
 echo "$admin" > /etc/perlogin/id
 clear
-
-echo "SHELL=/bin/sh" >/etc/cron.d/cekbot
-echo "PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin" >>/etc/cron.d/cekbot
-echo "*/1 * * * * root /usr/bin/cekbot" >>/etc/cron.d/cekbot
-
-cat > /usr/bin/cekbot << END
-nginx=$( systemctl status error404project | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $nginx == "running" ]]; then
-    echo -ne
-else
-    systemctl restart error404project
-    systemctl start error404project
-fi
-
-error404project=$( systemctl status error404project | grep "TERM" | wc -l )
-if [[ $error404project == "0" ]]; then
-echo -ne
-else
-    systemctl restart error404project
-    systemctl start error404project
-fi
-END
 
 cat > /etc/systemd/system/error404project.service << END
 [Unit]
