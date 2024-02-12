@@ -5,7 +5,7 @@
 apt update && apt upgrade
 sudo apt-get install python3 python3-pip -y
 cd /usr/bin
-wget https://github.com/messiey/lele/master/eror.zip
+wget https://raw.githubusercontent.com/messiey/lele/master/eror.zip
 unzip error.zip
 pip3 install -r error/requirements.txt
 pip3 install python-telegram-bot==13.7
