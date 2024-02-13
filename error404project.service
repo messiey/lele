@@ -1,0 +1,11 @@
+[Unit]
+Description=Error404Project Script
+After=syslog.target network-online.target
+
+[Service]
+WorkingDirectory=/root/error404project
+ExecStart=/usr/bin/python3 error404project.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
