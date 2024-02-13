@@ -1,6 +1,7 @@
 #!/bin/bash
-sudo apt update -y
-sudo apt upgrade -y
+
+#install
+apt update && apt upgrade -y
 sudo apt-get install python3 python3-pip -y
 pip3 install python-telegram-bot==13.7
 apt install python3 python3-pip git
