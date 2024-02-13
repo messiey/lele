@@ -24,7 +24,6 @@ Restart=always
 WantedBy=multi-user.target
 END
 
-echo " Installations complete, type /start on your bot"
 
 systemctl daemon-reload
 systemctl start error404project
@@ -32,3 +31,4 @@ systemctl enable error404project
 
 sleep 3
 clear
+echo " Installations complete, type /start on your bot"
