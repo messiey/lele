@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt-get install python3 python3-pip -y
@@ -22,6 +23,8 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 END
+
+echo " Installations complete, type /start on your bot"
 
 systemctl daemon-reload
 systemctl start error404project
