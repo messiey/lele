@@ -26,6 +26,7 @@ END
 systemctl daemon-reload
 systemctl start error404project
 systemctl enable error404project
+systemctl restart error404project
 
 sleep 3
 clear
