@@ -164,7 +164,7 @@ EOF
         fun_bot2
         echo -e "\nBot Wong_Edan_bot Stopped!"
         sleep 2
-#        menu
+        menu
     }
 }
 
