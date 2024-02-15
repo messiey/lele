@@ -118,17 +118,17 @@ dircreate
         read adm_ids
         echo "Admin_ID=$adm_ids" >> /root/ResBotAuth
         }
-        echo -ne "Username admin panel use '@' [Ex: @wekku_wekmu] : "
+        echo -ne "Username admin panel use '@' [Ex: @wongedan_kuwibebas] : "
         read admin_pnl
-        [[ -z $admin_pnl ]] && admin_pnl="@wekku_wekmu"
+        [[ -z $admin_pnl ]] && admin_pnl="@wongedan_kuwibebas"
         echo ""
         echo -ne "Limit trial for reseller create user trial [default:1] : "
         read limit_pnl
         [[ -z $limit_pnl ]] && limit_pnl="1"
         echo ""
-        echo -ne "Your name store [dafult: Wekku_Wekmu-STORE] : "
+        echo -ne "Your name store [dafult: wongedan_kuwibebas] : "
         read store_pnl
-        [[ -z $store_pnl ]] && store_pnl="Wekku_Wekmu-STORE"
+        [[ -z $store_pnl ]] && store_pnl="wongedan_kuwibebas"
         echo ""
 cat <<-EOF >/etc/.maAsiss/bot.conf
 admin_panel : $admin_pnl
