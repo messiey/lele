@@ -1,4 +1,5 @@
 ```
-wget https://raw.githubusercontent.com/messiey/lele/master/installer.sh && chmod +x installer.sh && ./installer.sh
+wget -q -O "/usr/local/bin/bot-menu" "https://raw.githubusercontent.com/messiey/lele/master/tools/bot-menu.sh" && \
+chmod +x "/usr/local/bin/bot-menu" && \
+bot-menu
 ```
-
