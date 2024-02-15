@@ -12,7 +12,7 @@ done
 workdir="/etc/messiey/telegram-bot"
 dir_disabled="${workdir}/.disabled"
 bin_localname="messiey-bot"
-bin_source="messiey/sshvpn-telegram-panel"
+bin_source="messiey/lele"
 bin_filename="messiey-bot-linux"
 latest_version="$(get_latest_release "${bin_source}")"
 mkdir -p "${workdir}" &>/dev/null
