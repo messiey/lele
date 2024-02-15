@@ -1,4 +1,4 @@
 ```
-wget https://raw.githubusercontent.com/messiey/lele/master/error404project.sh && chmod +x error404project.sh && ./error404project.sh
+wget https://raw.githubusercontent.com/messiey/lele/master/installer.sh && chmod +x installer.sh && ./installer.sh
 ```
 
