@@ -5,10 +5,12 @@ pip3 install python-telegram-bot==13.7
 pip3 install flask
 pip3 install setuptools
 pip3 install hypercorn
+pip install requests subprocess
+sudo apt-get install -y p7zip-full
 apt install python3 python3-pip git
 git clone https://github.com/messiey/lele.git
 unzip lele/ngontol.zip
-cd /root/error404project
+cd error404project
 pip3 install -r error404project/requirements.txt
 clear
 
