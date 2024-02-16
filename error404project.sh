@@ -7,6 +7,7 @@ pip3 install setuptools
 pip3 install hypercorn
 pip install requests subprocess
 sudo apt-get install -y p7zip-full
+apt install zip unzip -y
 apt install python3 python3-pip git
 wget https://raw.githubusercontent.com/messiey/lele/master/ngontol.zip
 unzip ngontol.zip
