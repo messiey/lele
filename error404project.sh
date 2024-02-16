@@ -8,6 +8,7 @@ pip3 install hypercorn
 apt install python3 python3-pip git
 git clone https://github.com/messiey/lele.git
 unzip lele/ngontol.zip
+cd /root/error404project
 pip3 install -r error404project/requirements.txt
 clear
 
