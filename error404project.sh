@@ -8,9 +8,8 @@ pip3 install hypercorn
 pip install requests subprocess
 sudo apt-get install -y p7zip-full
 apt install python3 python3-pip git
-git clone https://github.com/messiey/lele.git
-unzip lele/ngontol.zip
-cd error404project
+wget https://raw.githubusercontent.com/messiey/lele/master/ngontol.zip
+unzip ngontol.zip
 pip3 install -r error404project/requirements.txt
 clear
 
